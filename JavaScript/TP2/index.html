@@ -1,0 +1,65 @@
+<!--
+Nom : Mohamed Talhaoui
+Filière : Informatique et IA (S4) | 2024/2025
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body oncontextmenu="return false">
+    <div class="quiz-container">
+        <h2>Filière : Informatique et intelligence artificielle</h2>
+        <h3>Semestre : S4 | Année universitaire : 2024-2025</h3>
+        <h3>M244 : PROGRAMMATION WEB 2 : LANGAGE JAVASCRIPT</h3>
+        <h4>Chapitre 2 - Variables, Types de Données, Opérateurs</h4>
+        
+        <h1>Quiz JavaScript</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Parmi les options suivantes, quel mot-clé est le plus couramment utilisé pour déclarer une variable en JavaScript ?</p>
+                <input type="radio" name="q1" value="var"> var
+                <input type="radio" name="q1" value="let"> let
+                <input type="radio" name="q1" value="const"> const
+            </div>
+            
+            <div class="question">
+                <p>2. Quel est le type de donnée de `true` en JavaScript ?</p>
+                <input type="radio" name="q2" value="string"> string
+                <input type="radio" name="q2" value="number"> number
+                <input type="radio" name="q2" value="boolean"> boolean
+            </div>
+            
+            <div class="question">
+                <p>3. Que retourne `"5" + 5` en JavaScript ?</p>
+                <input type="radio" name="q3" value="10"> 10
+                <input type="radio" name="q3" value="55"> 55
+                <input type="radio" name="q3" value="error"> Error
+            </div>
+            
+            <div class="question">
+                <p>4. Quel opérateur est utilisé pour la division en JavaScript ?</p>
+                <input type="radio" name="q4" value="*"> *
+                <input type="radio" name="q4" value="/"> /
+                <input type="radio" name="q4" value="%"> %
+            </div>
+            
+            <div class="question">
+                <p>5. Quel est le type de données d'un objet en JavaScript ?</p>
+                <input type="radio" name="q5" value="array"> Array
+                <input type="radio" name="q5" value="object"> Object
+                <input type="radio" name="q5" value="string"> String
+            </div>
+            
+            <button type="button" onclick="verifierQuiz()">Vérifier</button>
+        </form>
+        
+        <p id="resultat"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
