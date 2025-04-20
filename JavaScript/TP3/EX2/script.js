@@ -3,7 +3,7 @@ let liste = document.querySelector(".taches");
 
 
 bouuton.addEventListener("click", () => {
-    let nouvelleTache = document.querySelector("li");
+    let nouvelleTache = document.createElement("li");
     nouvelleTache.textContent = "Nouvelle tache automatique";
     liste.appendChild(nouvelleTache);
 });
