@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3</title>
+</head>
+<body>
+    <h1 id="titre"></h1>
+    <p class="texte"></p>
+    <button id="btn">Clique</button>
+    <button id="modeBtn">Dark Mode</button>
+
+    <script>
+        document.querySelector("#titre").textContent = "Bienvenue sur mon site.";
+        document.querySelector(".texte").textContent = "Ceci est un texte modifie avec JavaScript.";
+
+        document.querySelector("#btn").addEventListener("click", () => {
+            document.querySelector("#titre").style.color = "red";
+            document.querySelector(".texte").style.color = "red";
+        })
+
+        document.querySelector("#modeBtn").addEventListener("click", () => {
+            document.querySelector("body").classList.toggle("dark-mode");
+
+            if (document.querySelector("body").classList.contains("dark-mode")) {
+                document.querySelector("body").style.color = "white";
+                document.querySelector("body").style.backgroundColor = "black";
+            } else {
+                document.querySelector("body").style.color = "";
+                document.querySelector("body").style.backgroundColor = "";
+            }
+        })
+
+    </script>
+</body>
+</html>
