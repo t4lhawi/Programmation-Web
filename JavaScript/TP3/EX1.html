@@ -8,6 +8,12 @@
 <body>
     <button id="btnAfficher">Afficher le message</button>
     <p id="zoneMessage"></p>
-    <script src="script.js"></script>
+    <script>
+        let bouton = document.getElementById("btnAfficher");
+        let paragraphe = document.getElementById("zoneMessage");
+        bouton.addEventListener("click", () => {
+            paragraphe.textContent = "Bonjour, vous aves clique sur le bouton !";
+        })
+    </script>
 </body>
 </html>

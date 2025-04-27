@@ -10,6 +10,12 @@
         <p style="display: none;">Ce texte est cache.</p>
         <p><b>Bonjour</b> tout le monde !</p>
     </div>
-    <script src="script.js"></script>
+    <script>
+        let element = document.getElementById("exemple");
+
+        console.log("innerText :", element.innerHTML);
+        console.log("textContent :", element.textContent);
+        console.log("innerinnerHTMLText :", element.innerHTML);
+    </script>
 </body>
 </html>
