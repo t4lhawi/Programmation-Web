@@ -9,18 +9,17 @@ Filière : Informatique et IA (S4) | 2024/2025
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz JavaScript</title>
     <link rel="stylesheet" href="style.css">
+    <!--Si vous ne souhaitez pas telecharger et heberger jQuery vous-meme, vous pouvez l'inclure depuis un CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="quiz-container">
         <h2>Filière : Informatique et intelligence artificielle</h2>
         <h3>Semestre : S4 | Année universitaire : 2024-2025</h3>
         <h3>M244 : PROGRAMMATION WEB 2 : LANGAGE JAVASCRIPT</h3>
-        <h4>Chapitre 2 - Variables, Types de Données, Opérateurs</h4>
-        
+        <h4>Chapitre 6 - Créer un quiz interactif avec POO, AJAX et jQuery</h4>
         <h1>Quiz JavaScript</h1>
         <form id="quiz-form">
-            <button type="button" onclick="activerBoutonAstuce()">Astuce JavaScript</button>
-            <button type="button" onclick="differenceClassiqueFlechee()">Difference classique/flechee</button><br><br>
             <div class="question">
                 <p>1. Parmi les options suivantes, quel mot-clé est le plus couramment utilisé pour déclarer une variable en JavaScript ?</p>
                 <input type="radio" name="q1" value="var"> var
@@ -56,12 +55,10 @@ Filière : Informatique et IA (S4) | 2024/2025
                 <input type="radio" name="q5" value="string"> String
             </div>
             
-            <button type="button" onclick="verifierQuiz()">Vérifier</button>
+            <button type="button">Vérifier</button>
         </form>
-        
         <p id="resultat"></p>
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
