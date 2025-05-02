@@ -4,77 +4,61 @@ Filière : Informatique et IA (S4) | 2024/2025
 -->
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programmation Web 2 | Mohamed Talhaoui</title>
-    <link href="/Media/link-logo.png" rel="shortcut icon"/>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Quiz JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Si vous ne souhaitez pas telecharger et heberger jQuery vous-meme, vous pouvez l'inclure depuis un CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-
-<body oncontextmenu="return false">
-    <div class="container">
-        <header>
-            <h1>JavaScript | Mohamed Talhaoui</h1>
-            <p>Explorez tous les exercices que j'ai résolus</p>
-            <p style="font-size: 1rem; font-weight: 500;">Source du Code dans <a style="font-weight: 700;" href="https://github.com/mohamedtalhaouii/Programmation-Web/tree/main/JavaScript" target="_blank">GitHub</a></p>
-        </header>
-        <main>
-            <section>
-                <i onclick="goBack()" class="fa-solid fa-circle-chevron-left fa-2xl" style="color: #7450f6;" title="Back"></i>
-            </section>
+<body>
+    <div class="quiz-container">
+        <h2>Filière : Informatique et intelligence artificielle</h2>
+        <h3>Semestre : S4 | Année universitaire : 2024-2025</h3>
+        <h3>M244 : PROGRAMMATION WEB 2 : LANGAGE JAVASCRIPT</h3>
+        <h4>Chapitre 6 - Créer un quiz interactif avec POO, AJAX et jQuery</h4>
+        <h1>Quiz JavaScript</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Parmi les options suivantes, quel mot-clé est le plus couramment utilisé pour déclarer une variable en JavaScript ?</p>
+                <input type="radio" name="q1" value="var"> var
+                <input type="radio" name="q1" value="let"> let
+                <input type="radio" name="q1" value="const"> const
+            </div>
             
-            <section class="tdm">
-                <a href="/JavaScript/TP1/$TP1.pdf" title="PDF"><h2>TP 1</h2></a>
-                <div class="exercices-grid">
-                    <a href="/JavaScript/TP1/index.html" class="exercices-card">Voir le Resultat de TP1</a>
-                </div>
-            </section>
-            <section class="tdm">
-                <a href="/JavaScript/TP2/$TP2.pdf" title="PDF"><h2>TP 2</h2></a>
-                <div class="exercices-grid">
-                    <a href="/JavaScript/TP2/index.html" class="exercices-card">Voir le Resultat de TP2</a>
-                </div>
-            </section>
-            <section class="tdm">
-                <a href="/JavaScript/TP3/$TP3.pdf" title="PDF"><h2>TP 3</h2></a>
-                <div class="exercices-grid">
-                    <a href="/JavaScript/TP3/index.html" class="exercices-card">Voir le Resultat de TP3</a>
-                </div>
-            </section>
-
-<!--             <section class="tdm">
-                <a href="/JavaScript/TP4/" title="PDF"><h2>TP 4</h2></a>
-                <div class="exercices-grid">
-                    <a href="/JavaScript/TP4/EX1/index.html" class="exercices-card">Exercice 1</a>
-                    <a href="/JavaScript/TP4/EX2/index.html" class="exercices-card">Exercice 2</a>
-                    <a href="/JavaScript/TP4/EX3/index.html" class="exercices-card">Exercice 3</a>
-                    <a href="/JavaScript/TP4/EX4/index.html" class="exercices-card">Exercice 4</a>
-                    <a href="/JavaScript/TP4/EX5/index.html" class="exercices-card">Exercice 5</a>
-                    <a href="/JavaScript/TP4/EX6/index.html" class="exercices-card">Exercice 6</a>
-                </div>
-            </section> -->
-
-            <hr class="divider">
-
-            <section class="tdm">
-                <a href="/JavaScript/Projet/Projet.pdf" title="PDF"><h2>Projet - Jeu de Mémoire JavaScript (En Cours...)</h2></a>
-                <div class="exercices-grid">
-                    <a href="https://memorygamejs.pages.dev" class="exercices-card">Voir le Projet</a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>© 2025 Mohamed Talhaoui. Tous droits réservés.</p>
-        </footer>
+            <div class="question">
+                <p>2. Quel est le type de donnée de `true` en JavaScript ?</p>
+                <input type="radio" name="q2" value="string"> string
+                <input type="radio" name="q2" value="number"> number
+                <input type="radio" name="q2" value="boolean"> boolean
+            </div>
+            
+            <div class="question">
+                <p>3. Que retourne `"5" + 5` en JavaScript ?</p>
+                <input type="radio" name="q3" value="10"> 10
+                <input type="radio" name="q3" value="55"> 55
+                <input type="radio" name="q3" value="error"> Error
+            </div>
+            
+            <div class="question">
+                <p>4. Quel opérateur est utilisé pour la division en JavaScript ?</p>
+                <input type="radio" name="q4" value="*"> *
+                <input type="radio" name="q4" value="/"> /
+                <input type="radio" name="q4" value="%"> %
+            </div>
+            
+            <div class="question">
+                <p>5. Quel est le type de données d'un objet en JavaScript ?</p>
+                <input type="radio" name="q5" value="array"> Array
+                <input type="radio" name="q5" value="object"> Object
+                <input type="radio" name="q5" value="string"> String
+            </div>
+            
+            <button type="button">Vérifier</button>
+        </form>
+        <p id="resultat"></p>
     </div>
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
