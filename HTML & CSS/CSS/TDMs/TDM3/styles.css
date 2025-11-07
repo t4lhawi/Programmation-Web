@@ -243,5 +243,5 @@ section button{
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: #660033;
-    list-style-image: url(/images/ico_liensexterne.png);
+    list-style-image: url(https://t4lhawi.github.io/Programmation-Web/HTML%20&%20CSS/CSS/TDMs/TDM3/images/ico_liensexterne.png);
 }
