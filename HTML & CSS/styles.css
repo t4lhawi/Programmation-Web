@@ -513,7 +513,7 @@ main {
 
 footer {
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
     background: #333;
     color: #fff;
     font-size: 0.9rem;
@@ -522,7 +522,7 @@ footer {
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
 }
 
 hr.divider {
