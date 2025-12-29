@@ -230,8 +230,8 @@ header h1 {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .student-avatar {
-        justify-items: center;
-        margin-bottom: 30px;
+        justify-self: center;
+        margin-bottom: 25px;
     }
     .social-icon {
         width: 36px;
