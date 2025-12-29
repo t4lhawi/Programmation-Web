@@ -129,7 +129,7 @@ header h1 {
 }
 
 .student-avatar {
-    margin: 0;
+    justify-items: center;
 }
 
 .student-avatar img {
@@ -234,7 +234,6 @@ header h1 {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .student-avatar {
-        justify-content: center;
         margin-bottom: 25px;
     }
 

@@ -127,6 +127,10 @@ header h1 {
     gap: 1.5rem;
 }
 
+.student-avatar {
+    justify-items: center;
+}
+
 .student-avatar img{
     width: 90px;
     height: 90px;
@@ -229,7 +233,6 @@ header h1 {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .student-avatar {
-        justify-content: center;
         margin-bottom: 25px;
     }
 
