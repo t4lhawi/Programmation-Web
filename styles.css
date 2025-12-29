@@ -128,7 +128,7 @@ header h1 {
     gap: 1.5rem;
 }
 
-.student-avatar img{
+.student-avatar img {
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -229,6 +229,9 @@ header h1 {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .student-avatar img {
+        margin: 20px;
+    }
     .social-icon {
         width: 36px;
         height: 36px;
