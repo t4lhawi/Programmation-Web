@@ -449,7 +449,6 @@ header::before {
     
     .github-button {
         padding: 0.8rem;
-        border-radius: 50%;
         width: auto;
         height: 55px;
         justify-content: center;
