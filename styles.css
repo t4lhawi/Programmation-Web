@@ -414,7 +414,6 @@ header::before {
     .student-avatar {
         width: 60px;
         height: 60px;
-        font-size: 1.7rem;
     }
     
     .student-details h3 {
@@ -458,10 +457,6 @@ header::before {
         width: 55px;
         height: 55px;
         justify-content: center;
-    }
-    
-    .github-button .external-icon {
-        display: none;
     }
     
     .github-subtext {
