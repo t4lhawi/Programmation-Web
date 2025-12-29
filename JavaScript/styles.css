@@ -228,6 +228,11 @@ header h1 {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .student-avatar {
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    
     .social-icon {
         width: 36px;
         height: 36px;
@@ -439,20 +444,11 @@ header::before {
         font-size: 0.9rem;
     }
     
-    .github-button span {
-        display: none;
-    }
-    
     .github-button {
         padding: 0.8rem;
-        border-radius: 50%;
-        width: 55px;
-        height: 55px;
+        width: auto;
+        height: 35px;
         justify-content: center;
-    }
-    
-    .github-button .external-icon {
-        display: none;
     }
     
     .github-subtext {
